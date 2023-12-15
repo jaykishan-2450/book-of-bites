@@ -2,7 +2,7 @@ import React from 'react'
 import { Rating } from 'semantic-ui-react'
 
 const DishRating = () => (
-  <Rating icon='heart' defaultRating={3} maxRating={5}  />
+  <Rating icon='star' defaultRating={3} maxRating={5}  size='small'/>
 )
 
 export default DishRating

@@ -1,9 +1,6 @@
 .dishcard{
     margin-left: 200px !important;
 }
-.like{
-    margin-left: 20px !important;
-}
-.like:hover{
-    color: blue;
+.bookmark{
+    margin-left: 160px !important;
 }

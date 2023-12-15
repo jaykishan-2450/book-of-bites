@@ -2,24 +2,22 @@ import React from 'react'
 import { useState } from "react";
 import { Card, Icon, Image } from 'semantic-ui-react'
 import './DishCard.css'
+import ShortDesc from './ShortDesc';
 import DishRating from './DishRating'
 const DishCard= () => (
   <Card className='dishcard'>
-    <Image src={process.env.PUBLIC_URL + '/images/lemoncake.webp'} />
+    <Image src={process.env.PUBLIC_URL + '/lemoncake.webp'} />
     <Card.Content>
       <Card.Header>Lemon Cake</Card.Header>
       <Card.Meta>
-        <span className='date'>Dessert</span>
+        <span>Dessert <span id='bookmark'><Icon name="bookmark outline" size="big"/></span></span>
       </Card.Meta>
       <Card.Description>
-        <DishRating/>
+        <ShortDesc/>
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
-      <a>
-        <Icon name='user' />
-      </a>
-      <button><Icon name='thumbs up' className='like'/></button>
+    <DishRating/>
     </Card.Content>
   </Card>
 )

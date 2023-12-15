@@ -1,5 +1,6 @@
 import React from 'react'
 import {Grid} from 'semantic-ui-react'
+import './DishGrid.css'
 import DishCard from './DishCard';
 const DishGrid = () => (
   <Grid columns={3}>
