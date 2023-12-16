@@ -11,7 +11,7 @@ const NewSidebar = () => (
       visible
       width='thin'
     >
-      <header>BOOK OF BITES</header>
+      <header style={{color:"white",margin:"10px",padding:"5px",border:"2px solid white",borderRadius:"14%"}}>BOOK OF BITES</header>
       <Menu.Item as='a'>
         <Icon name='home' />
         Home
