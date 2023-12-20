@@ -1,5 +1,6 @@
 import React from 'react'
 import { Header, Icon, Image, Menu, Segment, Sidebar } from 'semantic-ui-react'
+import { BrowserRouter,Link } from "react-router-dom";
 
 const NewSidebar = () => (
     <Sidebar
@@ -11,18 +12,21 @@ const NewSidebar = () => (
       visible
       width='thin'
     >
-      <header style={{color:"white",margin:"10px",padding:"5px",border:"2px solid white",borderRadius:"14%"}}>BOOK OF BITES</header>
+      <Menu.Item >
+        <p style={{border:"2px solid white",borderRadius:"10px",padding:"5px"}}>BOOK OF BITES</p>
+      </Menu.Item>
+      
       <Menu.Item as='a'>
-        <Icon name='home' />
-        Home
+        <Link to="/"><Icon name='home' />
+        Home</Link>
       </Menu.Item>
       <Menu.Item as='a'>
-        <Icon name='content' />
-        Recipes
+        <Link to="/recipes"><Icon name='content' />
+        Recipes</Link>
       </Menu.Item>
       <Menu.Item as='a'>
-        <Icon name='conversation' />
-        Contact Us
+        <Link to="/contact"><Icon name='conversation' />
+        Contact Us</Link>
       </Menu.Item>
     </Sidebar>
 )

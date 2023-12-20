@@ -1,6 +1,12 @@
 .dishcard{
     margin-left: 200px !important;
 }
-.bookmark{
-    margin-left: 160px !important;
+#t{
+    padding-top: 10px;
+    max-width: fit-content;
+    background-color: transparent;
+    border: none; 
+}
+span{
+    margin-left: 1vw;
 }
