@@ -37,4 +37,4 @@ const ShortDesc = () => {
   )
 }
 
-export default ShortDesc
+export default ShortDesc;

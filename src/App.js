@@ -1,5 +1,4 @@
 import './App.css';
-import DishCard from './DishCard';
 import { useState } from "react";
 import { useEffect } from "react";
 import DishGrid from './DishGrid';
@@ -12,7 +11,7 @@ function App() {
       // Simulate an API call
       setTimeout(() => {
         setIsLoading(false);
-      }, 3000);
+      }, 2500);
     }, []);
   
     if (isLoading) {
