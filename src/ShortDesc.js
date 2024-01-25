@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Icon, Image, Modal } from 'semantic-ui-react'
 import './ShortDesc.css'
+import Video from './video'
 const ShortDesc = () => {
   const [open, setOpen] = React.useState(false)
 
@@ -16,6 +17,9 @@ const ShortDesc = () => {
         <Image size='medium' src='/lemoncake.webp' wrapped />
 
         <Modal.Description>
+          <Video/>
+          <br/>
+          <h3>Recipe: </h3>
           <p>
           1. Preheat oven to 350°F (177°C). Grease a 9x5-inch (or 8x4-inch) loaf pan.<br/>
 2. In a medium bowl combine the flour, baking powder, lemon zest, and salt. Set aside.<br/>

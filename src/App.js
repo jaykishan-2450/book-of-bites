@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import DishGrid from './DishGrid';
 import NewSidebar from './NewSidebar';
 import Loading from './loading';
+
 function App() {
     const [isLoading, setIsLoading] = useState(true);
   

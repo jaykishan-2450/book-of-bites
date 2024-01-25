@@ -1,4 +1,4 @@
-import { Button, Form, Grid, GridRow, Icon, Menu, Modal } from "semantic-ui-react";
+import { Button, Form, Grid, GridRow, Icon, Menu, Modal,Popup } from "semantic-ui-react";
 import { useState } from "react";
 import "./NewRecipeForm.css";
 
@@ -58,14 +58,15 @@ const NewRecipeForm = ({handleAddNote}) => {
       </Form>
 
       <Modal.Actions>
-        <Button
-          content="Share this masterpiece!"
+      <Popup content='Add this recipe' trigger={<Button
+            onClick={() => setOpen(false)}
+          content="Add this masterpiece!"
           labelPosition="right"
           icon="check right"
-          onClick={handleSubmitNote}
           positive
           type="submit"
-        />
+        />} />
+        
       </Modal.Actions>
     </Modal>
   );

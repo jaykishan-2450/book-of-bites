@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header, Icon, Image, Menu, Segment, Sidebar } from 'semantic-ui-react'
 import NewRecipeForm from './NewRecipeForm'
-
+import Login from './login'
 
 const NewSidebar = ({handleAddNote}) => (
     <Sidebar
@@ -18,12 +18,15 @@ const NewSidebar = ({handleAddNote}) => (
         <Icon name='home' />
         Home
       </Menu.Item>
+      <Menu.Item as='a' href="#newrecipe">
+        <NewRecipeForm handleAddNote= {handleAddNote}/>
+      </Menu.Item>
+      <Menu.Item as='a' href="#contact">
+        <Login/>
+      </Menu.Item>
       <Menu.Item as='a' href="#recipes">
         <Icon name='content' />
         Recipes
-      </Menu.Item>
-      <Menu.Item as='a' href="#newrecipe">
-        <NewRecipeForm handleAddNote= {handleAddNote}/>
       </Menu.Item>
       <Menu.Item as='a' href="#contact">
         <Icon name='conversation' />
